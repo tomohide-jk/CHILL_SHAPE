@@ -1,44 +1,31 @@
-import { defineConfig } from 'vite';
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   plugins: [
+    react(),
     VitePWA({
       registerType: 'autoUpdate',
-      devOptions: {
-        enabled: false
-      },
-      includeAssets: ['favicon.ico', 'robots.txt'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'REBOOT_GATE',
-        short_name: 'REBOOT',
-        description: 'SF密室脱出 × DJコンソール — 音を重ねてゲートを開け',
-        theme_color: '#050505',
-        background_color: '#050505',
-        display: 'fullscreen',
-        orientation: 'landscape',
+        name: 'CHILL_SHAPE',
+        short_name: 'CHILL',
+        description: '触れるマインドフルネス。日常の断片を整えるチルな体験。',
+        theme_color: '#1a1a2e',
         icons: [
           {
-            src: 'icon-192.png',
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'icon-512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
         ]
       }
     })
-  ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          three: ['three'],
-        }
-      }
-    }
-  }
-});
+  ]
+})

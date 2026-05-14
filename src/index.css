@@ -1,0 +1,29 @@
+:root {
+  --bg-top: #1a1a2e;
+  --bg-bottom: #16213e;
+  --text: #f8edeb;
+  --accent: #ffb5a7;
+  --font: 'Quicksand', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-top);
+  color: var(--text);
+  font-family: var(--font);
+  overflow: hidden;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}

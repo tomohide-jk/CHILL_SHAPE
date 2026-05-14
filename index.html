@@ -1,56 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="REBOOT_GATE — SF密室脱出ゲーム。DJコンソール型脱出装置の謎を解き、音を重ねてシステムを再起動せよ。" />
-  <meta name="theme-color" content="#050505" />
-  <title>REBOOT_GATE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/styles.css" />
-</head>
-<body>
-  <!-- Three.js Canvas Container -->
-  <div id="canvas-container"></div>
-
-  <!-- UI Overlay Layer -->
-  <div id="ui-overlay">
-    <!-- Title Screen -->
-    <div id="title-screen" class="overlay-panel">
-      <h1 id="title-logo" class="glitch-text" data-text="REBOOT_GATE">REBOOT_GATE</h1>
-      <p id="title-subtitle" class="subtitle">— SYSTEM OFFLINE —</p>
-      <button id="start-button" class="neon-button">
-        <span class="btn-text">INITIALIZE</span>
-        <span class="btn-glitch" aria-hidden="true">INITIALIZE</span>
-      </button>
-    </div>
-
-    <!-- HUD (in-game) -->
-    <div id="hud" class="hidden">
-      <div id="stage-indicator">
-        <span class="stage-label">STAGE</span>
-        <span id="stage-number" class="stage-num">1</span>
-        <span class="stage-sep">/</span>
-        <span class="stage-total">4</span>
-      </div>
-      <div id="hint-container" class="hidden">
-        <p id="hint-text" class="glitch-text" data-text=""></p>
-      </div>
-      <div id="audio-visualizer">
-        <canvas id="viz-canvas" width="256" height="64"></canvas>
-      </div>
-    </div>
-
-    <!-- Escape Sequence Overlay -->
-    <div id="escape-overlay" class="hidden">
-      <div id="escape-flash"></div>
-      <h2 id="escape-text" class="glitch-text" data-text="SYSTEM REBOOTED">SYSTEM REBOOTED</h2>
-      <p id="escape-subtitle">GATE OPENED — WELCOME BACK TO REALITY</p>
-    </div>
-  </div>
-
-  <script type="module" src="/src/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CHILL_SHAPE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
