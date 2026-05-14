@@ -1,2 +1,2 @@
-# REBOOT_GATE
+#CHILL_SHAPE
 東京ゲームショウ2026年に出展するゲームです．
